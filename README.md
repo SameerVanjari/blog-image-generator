@@ -1,6 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Hero Image Generator
 
-## Getting Started
+This is an image generator for blogs. This project was result of the frustration I felt due to searching for a hero image when I started writing a blog. The process of writing a blog takes a lot of time and effort to write something that is helpful for people, but so does finding an hero image for it.
+Thus I thought why not created something that will do this for me.
 
 First, run the development server:
 
