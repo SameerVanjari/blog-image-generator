@@ -1,22 +1,26 @@
-import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Manrope } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Blog Image Generator",
-  description: "Generate awesome images for your blogs.",
-};
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+});
+const comfortaa = Comfortaa({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-comfortaa",
+});
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={manrope.variable + comfortaa.variable}>{children}</body>
     </html>
   );
 }
