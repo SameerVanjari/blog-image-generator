@@ -47,7 +47,7 @@ export default function Component() {
               <p className="max-w-prose text-purple-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-purple-400">
                 The platform analyzes your blog post and offers a selection of
                 images that best fit your content. Simply choose the one you
-                like, and you're ready to go.
+                like, and you&apos;re ready to go.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
@@ -80,8 +80,8 @@ export default function Component() {
             </h2>
             <p className="max-w-[700px] text-center text-purple-500 md:text-xl/relaxed dark:text-purple-400">
               Unlock the full potential of the AI-powered blog hero image
-              generator with a subscription. Choose the plan that's right for
-              you.
+              generator with a subscription. Choose the plan that&apos;s right
+              for you.
             </p>
           </div>
           <div className="grid max-w-4xl gap-6 mx-auto lg:grid-cols-3 lg:gap-12">
