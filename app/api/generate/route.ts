@@ -1,7 +1,7 @@
 import { OpenAI } from "openai";
 
 export const dynamic = "force-dynamic";
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 const prompt = (content: string, title: string) =>
   `Summarize the following blog post titled ${title} and capture the main points in 3-4 sentences. Focus on the key ideas, any actionable tips, and the overall theme of the post. The blog content is - ${content}`;
