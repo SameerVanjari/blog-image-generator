@@ -13,7 +13,7 @@ const ImageFormContainer = () => {
     return <InputForm setImages={setImages} />;
   }
   return (
-    <div className="grid grid-cols-3 place-items-center gap-4">
+    <div className="grid grid-cols- place-items-center gap-4">
       {images?.map((item) => (
         <div key={item.url} className="h-[400px] rounded-md">
           <img
