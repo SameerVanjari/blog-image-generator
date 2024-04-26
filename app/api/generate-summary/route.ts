@@ -38,17 +38,8 @@ export const POST = async (req: Request) => {
 
     const imagePrompt = summaryPmt.choices[0].text.trim();
 
-    const image = await openai.images.generate({
-      prompt: imagePrompt,
-      model: "dall-e-3",
-      n: 1,
-      size: "1024x1024",
-    });
-
-    console.log("image ==> ", imagePrompt);
-
     // Return the summary
-    return Response.json({ summary: response.choices[0].text.trim(), image });
+    return Response.json({ prompt: imagePrompt });
   } catch (error) {
     console.error("Error:", error);
     // Response.error("Failed to generate summary");

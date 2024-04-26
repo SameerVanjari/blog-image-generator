@@ -41,13 +41,20 @@ const InputForm = ({
     }
     try {
       setLoading(true);
-      const response = await fetch("/api/generate", {
+      const response = await fetch("/api/generate-summary", {
         method: "POST",
         body: JSON.stringify(blogData),
       });
       const generatedData = await response.json();
 
-      setImages(generatedData.image.data);
+      const imageResponse = await fetch("/api/generate-image", {
+        method: "POST",
+        body: JSON.stringify({ prompt: generatedData.prompt }),
+      });
+      const image = await imageResponse.json();
+
+      console.log("last", image);
+      setImages(image.image.data);
       setLoading(false);
     } catch (err) {
       setLoading(false);
